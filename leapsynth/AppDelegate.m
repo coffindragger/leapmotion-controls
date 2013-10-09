@@ -12,6 +12,7 @@
 
 @synthesize window = _window;
 @synthesize slider1;
+@synthesize cursorOverlay;
 
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -19,7 +20,7 @@
     leapController = [[LeapController alloc] init];
     [leapController addListener:self];
     
-    [leapController addListener:slider1];
+    [leapController addListener:cursorOverlay];
 }
 
 

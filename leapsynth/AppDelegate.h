@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "LeapObjectiveC.h"
 #import "LeapSlider.h"
+#import "CursorOverlay.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 {
@@ -17,5 +18,6 @@
 
 @property (assign) IBOutlet NSWindow *window;
 @property (weak) IBOutlet LeapSlider *slider1;
+@property (weak) IBOutlet CursorOverlay *cursorOverlay;
 
 @end

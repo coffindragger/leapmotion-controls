@@ -19,6 +19,8 @@
 		12206EEF1804E72E00525EAC /* LeapSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 12206EEE1804E72E00525EAC /* LeapSlider.m */; };
 		12206EF11804ED0100525EAC /* slider_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 12206EF01804ED0100525EAC /* slider_bg.png */; };
 		12206EF31804F76B00525EAC /* slider_knob.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 12206EF21804F76B00525EAC /* slider_knob.jpg */; };
+		12206EF6180504A900525EAC /* CursorOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 12206EF5180504A900525EAC /* CursorOverlay.m */; };
+		12206F0518050D4A00525EAC /* PointableCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 12206F0418050D4A00525EAC /* PointableCursor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +60,10 @@
 		12206EEE1804E72E00525EAC /* LeapSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeapSlider.m; sourceTree = "<group>"; };
 		12206EF01804ED0100525EAC /* slider_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slider_bg.png; path = img/slider_bg.png; sourceTree = "<group>"; };
 		12206EF21804F76B00525EAC /* slider_knob.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = slider_knob.jpg; path = img/slider_knob.jpg; sourceTree = "<group>"; };
+		12206EF4180504A900525EAC /* CursorOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CursorOverlay.h; sourceTree = "<group>"; };
+		12206EF5180504A900525EAC /* CursorOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CursorOverlay.m; sourceTree = "<group>"; };
+		12206F0318050D4A00525EAC /* PointableCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointableCursor.h; sourceTree = "<group>"; };
+		12206F0418050D4A00525EAC /* PointableCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointableCursor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,10 @@
 				12206EED1804E72E00525EAC /* LeapSlider.h */,
 				12206EEE1804E72E00525EAC /* LeapSlider.m */,
 				12206ED31804C33B00525EAC /* MainMenu.xib */,
+				12206EF4180504A900525EAC /* CursorOverlay.h */,
+				12206EF5180504A900525EAC /* CursorOverlay.m */,
+				12206F0318050D4A00525EAC /* PointableCursor.h */,
+				12206F0418050D4A00525EAC /* PointableCursor.m */,
 				12206EC51804C33B00525EAC /* Supporting Files */,
 			);
 			path = leapsynth;
@@ -221,6 +231,8 @@
 				12206ED21804C33B00525EAC /* AppDelegate.m in Sources */,
 				12206EE41804C3A300525EAC /* LeapObjectiveC.mm in Sources */,
 				12206EEF1804E72E00525EAC /* LeapSlider.m in Sources */,
+				12206EF6180504A900525EAC /* CursorOverlay.m in Sources */,
+				12206F0518050D4A00525EAC /* PointableCursor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +364,7 @@
 				12206EDA1804C33B00525EAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
