@@ -14,5 +14,7 @@
 @synthesize x;
 @synthesize y;
 @synthesize depth;
+@synthesize color;
+@synthesize present;
 
 @end

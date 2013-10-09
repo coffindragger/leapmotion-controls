@@ -13,11 +13,16 @@
     int32_t pointableId;
     float x,y;
     float depth;
+    NSColor *color;
+    BOOL present;
 }
 
 @property (assign) int32_t pointableId;
 @property (assign) float x;
 @property (assign) float y;
 @property (assign) float depth;
+@property (assign) BOOL present;
+@property (retain)  NSColor *color;
+
 
 @end
