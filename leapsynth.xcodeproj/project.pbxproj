@@ -13,7 +13,26 @@
 		12206ECF1804C33B00525EAC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 12206ECD1804C33B00525EAC /* Credits.rtf */; };
 		12206ED21804C33B00525EAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12206ED11804C33B00525EAC /* AppDelegate.m */; };
 		12206ED51804C33B00525EAC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12206ED31804C33B00525EAC /* MainMenu.xib */; };
+		12206EE41804C3A300525EAC /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 12206EE11804C3A300525EAC /* LeapObjectiveC.mm */; };
+		12206EE51804C3A300525EAC /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12206EE21804C3A300525EAC /* libLeap.dylib */; };
+		12206EE81804C44E00525EAC /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12206EE21804C3A300525EAC /* libLeap.dylib */; };
+		12206EEF1804E72E00525EAC /* LeapSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 12206EEE1804E72E00525EAC /* LeapSlider.m */; };
+		12206EF11804ED0100525EAC /* slider_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 12206EF01804ED0100525EAC /* slider_bg.png */; };
+		12206EF31804F76B00525EAC /* slider_knob.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 12206EF21804F76B00525EAC /* slider_knob.jpg */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		12206EE61804C43300525EAC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				12206EE81804C44E00525EAC /* libLeap.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		12206EBA1804C33B00525EAC /* leapsynth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leapsynth.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,14 +40,24 @@
 		12206EC11804C33B00525EAC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		12206EC21804C33B00525EAC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		12206EC31804C33B00525EAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		12206EC61804C33B00525EAC /* leapsynth-Info.plist */ = {isa = PBXFileReference; path = "leapsynth-Info.plist"; sourceTree = "<group>"; };
+		12206EC61804C33B00525EAC /* leapsynth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "leapsynth-Info.plist"; sourceTree = "<group>"; };
 		12206EC81804C33B00525EAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		12206ECA1804C33B00525EAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		12206ECC1804C33B00525EAC /* leapsynth-Prefix.pch */ = {isa = PBXFileReference; path = "leapsynth-Prefix.pch"; sourceTree = "<group>"; };
+		12206ECC1804C33B00525EAC /* leapsynth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "leapsynth-Prefix.pch"; sourceTree = "<group>"; };
 		12206ECE1804C33B00525EAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		12206ED01804C33B00525EAC /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		12206ED01804C33B00525EAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		12206ED11804C33B00525EAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		12206ED41804C33B00525EAC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		12206EDD1804C3A300525EAC /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
+		12206EDE1804C3A300525EAC /* Leap.i */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c.preprocessed; path = Leap.i; sourceTree = "<group>"; };
+		12206EDF1804C3A300525EAC /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
+		12206EE01804C3A300525EAC /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapObjectiveC.h; sourceTree = "<group>"; };
+		12206EE11804C3A300525EAC /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LeapObjectiveC.mm; sourceTree = "<group>"; };
+		12206EE21804C3A300525EAC /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLeap.dylib; sourceTree = "<group>"; };
+		12206EED1804E72E00525EAC /* LeapSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapSlider.h; sourceTree = "<group>"; };
+		12206EEE1804E72E00525EAC /* LeapSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeapSlider.m; sourceTree = "<group>"; };
+		12206EF01804ED0100525EAC /* slider_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slider_bg.png; path = img/slider_bg.png; sourceTree = "<group>"; };
+		12206EF21804F76B00525EAC /* slider_knob.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = slider_knob.jpg; path = img/slider_knob.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12206EBF1804C33B00525EAC /* Cocoa.framework in Frameworks */,
+				12206EE51804C3A300525EAC /* libLeap.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +76,8 @@
 		12206EAF1804C33B00525EAC = {
 			isa = PBXGroup;
 			children = (
+				12206EF21804F76B00525EAC /* slider_knob.jpg */,
+				12206EF01804ED0100525EAC /* slider_bg.png */,
 				12206EC41804C33B00525EAC /* leapsynth */,
 				12206EBD1804C33B00525EAC /* Frameworks */,
 				12206EBB1804C33B00525EAC /* Products */,
@@ -63,20 +95,13 @@
 		12206EBD1804C33B00525EAC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				12206EBE1804C33B00525EAC /* Cocoa.framework */,
-				12206EC01804C33B00525EAC /* Other Frameworks */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		12206EC01804C33B00525EAC /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
+				12206EDB1804C3A300525EAC /* LeapSDK */,
 				12206EC11804C33B00525EAC /* AppKit.framework */,
 				12206EC21804C33B00525EAC /* CoreData.framework */,
 				12206EC31804C33B00525EAC /* Foundation.framework */,
+				12206EBE1804C33B00525EAC /* Cocoa.framework */,
 			);
-			name = "Other Frameworks";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		12206EC41804C33B00525EAC /* leapsynth */ = {
@@ -84,6 +109,8 @@
 			children = (
 				12206ED01804C33B00525EAC /* AppDelegate.h */,
 				12206ED11804C33B00525EAC /* AppDelegate.m */,
+				12206EED1804E72E00525EAC /* LeapSlider.h */,
+				12206EEE1804E72E00525EAC /* LeapSlider.m */,
 				12206ED31804C33B00525EAC /* MainMenu.xib */,
 				12206EC51804C33B00525EAC /* Supporting Files */,
 			);
@@ -102,6 +129,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		12206EDB1804C3A300525EAC /* LeapSDK */ = {
+			isa = PBXGroup;
+			children = (
+				12206EDC1804C3A300525EAC /* include */,
+				12206EE21804C3A300525EAC /* libLeap.dylib */,
+			);
+			name = LeapSDK;
+			path = lib/LeapSDK;
+			sourceTree = "<group>";
+		};
+		12206EDC1804C3A300525EAC /* include */ = {
+			isa = PBXGroup;
+			children = (
+				12206EDD1804C3A300525EAC /* Leap.h */,
+				12206EDE1804C3A300525EAC /* Leap.i */,
+				12206EDF1804C3A300525EAC /* LeapMath.h */,
+				12206EE01804C3A300525EAC /* LeapObjectiveC.h */,
+				12206EE11804C3A300525EAC /* LeapObjectiveC.mm */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +161,7 @@
 				12206EB61804C33B00525EAC /* Sources */,
 				12206EB71804C33B00525EAC /* Frameworks */,
 				12206EB81804C33B00525EAC /* Resources */,
+				12206EE61804C43300525EAC /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -155,6 +205,8 @@
 				12206EC91804C33B00525EAC /* InfoPlist.strings in Resources */,
 				12206ECF1804C33B00525EAC /* Credits.rtf in Resources */,
 				12206ED51804C33B00525EAC /* MainMenu.xib in Resources */,
+				12206EF11804ED0100525EAC /* slider_bg.png in Resources */,
+				12206EF31804F76B00525EAC /* slider_knob.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +219,8 @@
 			files = (
 				12206ECB1804C33B00525EAC /* main.m in Sources */,
 				12206ED21804C33B00525EAC /* AppDelegate.m in Sources */,
+				12206EE41804C3A300525EAC /* LeapObjectiveC.mm in Sources */,
+				12206EEF1804E72E00525EAC /* LeapSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,9 +302,15 @@
 		12206ED91804C33B00525EAC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "leapsynth/leapsynth-Prefix.pch";
 				INFOPLIST_FILE = "leapsynth/leapsynth-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib/LeapSDK\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -259,9 +319,15 @@
 		12206EDA1804C33B00525EAC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "leapsynth/leapsynth-Prefix.pch";
 				INFOPLIST_FILE = "leapsynth/leapsynth-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib/LeapSDK\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
