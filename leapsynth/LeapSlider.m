@@ -16,6 +16,7 @@
     if (self) {
         trackImage = [NSImage imageNamed:@"slider_bg.png"];
         knobImage = [NSImage imageNamed:@"slider_knob.jpg"];        
+        
     }
     
     return self;
@@ -38,7 +39,6 @@
                 operation:NSCompositeSourceOver
                  fraction:1.0];
      
-    // Drawing code here.
 }
 
 
@@ -52,6 +52,7 @@
 {
     
 }
+
 
 
 
