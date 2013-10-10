@@ -21,6 +21,8 @@
 		12206EF31804F76B00525EAC /* slider_knob.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 12206EF21804F76B00525EAC /* slider_knob.jpg */; };
 		12206EF6180504A900525EAC /* CursorOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 12206EF5180504A900525EAC /* CursorOverlay.m */; };
 		12206F0518050D4A00525EAC /* PointableCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 12206F0418050D4A00525EAC /* PointableCursor.m */; };
+		12D2F00218062D7500FA2161 /* LeapKnob.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D2F00118062D7500FA2161 /* LeapKnob.m */; };
+		12D2F006180634EC00FA2161 /* pot_knob.png in Resources */ = {isa = PBXBuildFile; fileRef = 12D2F005180634EC00FA2161 /* pot_knob.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,6 +66,9 @@
 		12206EF5180504A900525EAC /* CursorOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CursorOverlay.m; sourceTree = "<group>"; };
 		12206F0318050D4A00525EAC /* PointableCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointableCursor.h; sourceTree = "<group>"; };
 		12206F0418050D4A00525EAC /* PointableCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointableCursor.m; sourceTree = "<group>"; };
+		12D2F00018062D7500FA2161 /* LeapKnob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapKnob.h; sourceTree = "<group>"; };
+		12D2F00118062D7500FA2161 /* LeapKnob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeapKnob.m; sourceTree = "<group>"; };
+		12D2F005180634EC00FA2161 /* pot_knob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pot_knob.png; path = img/pot_knob.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +87,8 @@
 		12206EAF1804C33B00525EAC = {
 			isa = PBXGroup;
 			children = (
-				12206EF21804F76B00525EAC /* slider_knob.jpg */,
-				12206EF01804ED0100525EAC /* slider_bg.png */,
 				12206EC41804C33B00525EAC /* leapsynth */,
+				12D2F007180634FF00FA2161 /* Assets */,
 				12206EBD1804C33B00525EAC /* Frameworks */,
 				12206EBB1804C33B00525EAC /* Products */,
 			);
@@ -116,8 +120,7 @@
 				12206ED31804C33B00525EAC /* MainMenu.xib */,
 				12206ED01804C33B00525EAC /* AppDelegate.h */,
 				12206ED11804C33B00525EAC /* AppDelegate.m */,
-				12206EED1804E72E00525EAC /* LeapSlider.h */,
-				12206EEE1804E72E00525EAC /* LeapSlider.m */,
+				12D2F00418062D8000FA2161 /* Controls */,
 				12206EF4180504A900525EAC /* CursorOverlay.h */,
 				12206EF5180504A900525EAC /* CursorOverlay.m */,
 				12206F0318050D4A00525EAC /* PointableCursor.h */,
@@ -159,6 +162,27 @@
 				12206EE11804C3A300525EAC /* LeapObjectiveC.mm */,
 			);
 			path = include;
+			sourceTree = "<group>";
+		};
+		12D2F00418062D8000FA2161 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				12206EED1804E72E00525EAC /* LeapSlider.h */,
+				12206EEE1804E72E00525EAC /* LeapSlider.m */,
+				12D2F00018062D7500FA2161 /* LeapKnob.h */,
+				12D2F00118062D7500FA2161 /* LeapKnob.m */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		12D2F007180634FF00FA2161 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				12D2F005180634EC00FA2161 /* pot_knob.png */,
+				12206EF21804F76B00525EAC /* slider_knob.jpg */,
+				12206EF01804ED0100525EAC /* slider_bg.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +241,7 @@
 				12206ED51804C33B00525EAC /* MainMenu.xib in Resources */,
 				12206EF11804ED0100525EAC /* slider_bg.png in Resources */,
 				12206EF31804F76B00525EAC /* slider_knob.jpg in Resources */,
+				12D2F006180634EC00FA2161 /* pot_knob.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +258,7 @@
 				12206EEF1804E72E00525EAC /* LeapSlider.m in Sources */,
 				12206EF6180504A900525EAC /* CursorOverlay.m in Sources */,
 				12206F0518050D4A00525EAC /* PointableCursor.m in Sources */,
+				12D2F00218062D7500FA2161 /* LeapKnob.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1319,7 +1319,7 @@
 							<string key="NSFrame">{{115, 167}, {71, 173}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="1037656946"/>
+							<reference key="NSNextKeyView" ref="883996287"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<string key="NSClassName">LeapSlider</string>
 						</object>
@@ -1329,6 +1329,7 @@
 							<string key="NSFrame">{{216, 167}, {65, 173}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView" ref="744041776"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<string key="NSClassName">LeapSlider</string>
 						</object>
@@ -1338,8 +1339,49 @@
 							<string key="NSFrame">{{312, 167}, {65, 173}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView" ref="974265923"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<string key="NSClassName">LeapSlider</string>
+						</object>
+						<object class="NSCustomView" id="883996287">
+							<reference key="NSNextResponder" ref="439893737"/>
+							<int key="NSvFlags">292</int>
+							<string key="NSFrame">{{20, 51}, {80, 80}}</string>
+							<reference key="NSSuperview" ref="439893737"/>
+							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView" ref="857141828"/>
+							<string key="NSReuseIdentifierKey">_NS:9</string>
+							<string key="NSClassName">LeapKnob</string>
+						</object>
+						<object class="NSCustomView" id="857141828">
+							<reference key="NSNextResponder" ref="439893737"/>
+							<int key="NSvFlags">293</int>
+							<string key="NSFrame">{{145, 51}, {80, 80}}</string>
+							<reference key="NSSuperview" ref="439893737"/>
+							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView" ref="321420963"/>
+							<string key="NSReuseIdentifierKey">_NS:9</string>
+							<string key="NSClassName">LeapKnob</string>
+						</object>
+						<object class="NSCustomView" id="321420963">
+							<reference key="NSNextResponder" ref="439893737"/>
+							<int key="NSvFlags">293</int>
+							<string key="NSFrame">{{257, 51}, {80, 80}}</string>
+							<reference key="NSSuperview" ref="439893737"/>
+							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView" ref="1037656946"/>
+							<string key="NSReuseIdentifierKey">_NS:9</string>
+							<string key="NSClassName">LeapKnob</string>
+						</object>
+						<object class="NSCustomView" id="974265923">
+							<reference key="NSNextResponder" ref="439893737"/>
+							<int key="NSvFlags">289</int>
+							<string key="NSFrame">{{361, 51}, {80, 80}}</string>
+							<reference key="NSSuperview" ref="439893737"/>
+							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView"/>
+							<string key="NSReuseIdentifierKey">_NS:9</string>
+							<string key="NSClassName">LeapKnob</string>
 						</object>
 						<object class="NSCustomView" id="85844319">
 							<reference key="NSNextResponder" ref="439893737"/>
@@ -2595,6 +2637,10 @@
 							<reference ref="104375943"/>
 							<reference ref="1037656946"/>
 							<reference ref="744041776"/>
+							<reference ref="974265923"/>
+							<reference ref="857141828"/>
+							<reference ref="883996287"/>
+							<reference ref="321420963"/>
 							<reference ref="85844319"/>
 						</array>
 						<reference key="parent" ref="972006081"/>
@@ -3094,6 +3140,27 @@
 						<reference key="parent" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
+						<int key="objectID">639</int>
+						<reference key="object" ref="974265923"/>
+						<reference key="parent" ref="439893737"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">637</int>
+						<reference key="object" ref="857141828"/>
+						<reference key="parent" ref="439893737"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">638</int>
+						<reference key="object" ref="321420963"/>
+						<array class="NSMutableArray" key="children"/>
+						<reference key="parent" ref="439893737"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">636</int>
+						<reference key="object" ref="883996287"/>
+						<reference key="parent" ref="439893737"/>
+					</object>
+					<object class="IBObjectRecord">
 						<int key="objectID">594</int>
 						<reference key="object" ref="85844319"/>
 						<reference key="parent" ref="439893737"/>
@@ -3249,6 +3316,10 @@
 				<string key="589.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="594.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="635.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="636.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="637.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="638.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="639.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="72.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="73.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="74.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3265,7 +3336,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">635</int>
+			<int key="maxID">639</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -3302,6 +3373,14 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/CursorOverlay.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">LeapKnob</string>
+					<string key="superclassName">NSControl</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/LeapKnob.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
