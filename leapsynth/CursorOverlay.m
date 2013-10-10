@@ -54,7 +54,7 @@
     for (int i=0; i < [pointers count]; i++) {
         LeapPointable *pointer = [pointers objectAtIndex:i];
         LeapVector *tip = [pointer stabilizedTipPosition];
-        LeapVector *normalized = [[frame interactionBox] normalizePoint:tip clamp:YES];
+        LeapVector *normalized = [[frame interactionBox] normalizePoint:tip clamp:NO];
         
         NSNumber *pointer_id = [NSNumber numberWithInt:[pointer id]];
         PointableCursor *cursor = [cursors objectForKey:pointer_id];
@@ -66,8 +66,8 @@
         }
         
         [cursor setPresent:YES];
-        [cursor setX:normalized.x * [self bounds].size.width];
-        [cursor setY:normalized.y * [self bounds].size.height];
+        [cursor setX:normalized.x * _window.frame.size.width];
+        [cursor setY:normalized.y * _window.frame.size.height];
         [cursor setDepth:[pointer touchDistance]];
         [cursor setColor:[[cursor color] colorWithAlphaComponent:1.0 - [cursor depth]]];
     }

@@ -13,6 +13,7 @@
 @synthesize window = _window;
 @synthesize slider1;
 @synthesize cursorOverlay;
+@synthesize knob1;
 
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -39,6 +40,8 @@
 
 - (void)onFrame:(NSNotification *)notification
 {
+    [knob1 onFrame:notification];
+    
 //    LeapController *leap = (LeapController *)[notification object];
 //    LeapFrame *frame = [leap frame:0];
 //    
