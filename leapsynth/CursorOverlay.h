@@ -14,6 +14,9 @@
 @interface CursorOverlay : NSView
 {
     NSMutableDictionary *cursors;
+    BOOL showOnlyForemost;
 }
+
+@property (assign) BOOL showOnlyForemost;
 
 @end

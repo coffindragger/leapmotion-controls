@@ -9,11 +9,14 @@
 
 @implementation CursorOverlay
 
+@synthesize showOnlyForemost;
+
 - (id)initWithFrame:(NSRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         cursors = [[NSMutableDictionary alloc] initWithCapacity:5];
+        showOnlyForemost = YES;
     }
     
     return self;
@@ -50,27 +53,19 @@
         [cursor setPresent:NO];
     }
     
-    NSArray *pointers = [frame pointables];
-    for (int i=0; i < [pointers count]; i++) {
-        LeapPointable *pointer = [pointers objectAtIndex:i];
-        LeapVector *tip = [pointer stabilizedTipPosition];
-        LeapVector *normalized = [[frame interactionBox] normalizePoint:tip clamp:NO];
-        
-        NSNumber *pointer_id = [NSNumber numberWithInt:[pointer id]];
-        PointableCursor *cursor = [cursors objectForKey:pointer_id];
-        if (!cursor) {
-            cursor = [PointableCursor alloc];
-            [cursor setPointableId:[pointer id]];
-            [cursor setColor:[NSColor colorWithSRGBRed:[self randFloat] green:[self randFloat] blue:[self randFloat] alpha:1.0]];
-            [cursors setObject:cursor forKey:pointer_id];
-        }
-        
-        [cursor setPresent:YES];
-        [cursor setX:normalized.x * _window.frame.size.width];
-        [cursor setY:normalized.y * _window.frame.size.height];
-        [cursor setDepth:[pointer touchDistance]];
-        [cursor setColor:[[cursor color] colorWithAlphaComponent:1.0 - [cursor depth]]];
+    
+    NSArray *pointables = [frame pointables];
+
+    if (showOnlyForemost) {
+        [self addPointable:[pointables frontmost] inFrame:frame];
     }
+    else {
+        for (int i=0; i < [pointables count]; i++) {
+            [self addPointable:[pointables objectAtIndex:i] inFrame:frame];
+        }
+         
+    }
+            
     
     //remove any unused pointables
     for (id key in [cursors allKeys]) {
@@ -83,4 +78,26 @@
     [self setNeedsDisplay:YES];
     
 }
+- (void)addPointable:(LeapPointable*)pointable inFrame:(LeapFrame*)frame
+{
+
+    LeapVector *tip = [pointable stabilizedTipPosition];
+    LeapVector *normalized = [[frame interactionBox] normalizePoint:tip clamp:NO];
+
+    NSNumber *pointable_id = [NSNumber numberWithInt:[pointable id]];
+    PointableCursor *cursor = [cursors objectForKey:pointable_id];
+    if (!cursor) {
+        cursor = [PointableCursor alloc];
+        [cursor setPointableId:[pointable id]];
+        [cursor setColor:[NSColor colorWithSRGBRed:[self randFloat] green:[self randFloat] blue:[self randFloat] alpha:1.0]];
+        [cursors setObject:cursor forKey:pointable_id];
+    }
+
+    [cursor setPresent:YES];
+    [cursor setX:normalized.x * _window.frame.size.width];
+    [cursor setY:normalized.y * _window.frame.size.height];
+    [cursor setDepth:[pointable touchDistance]];
+    [cursor setColor:[[cursor color] colorWithAlphaComponent:1.0 - [cursor depth]]];
+}
+
 @end
