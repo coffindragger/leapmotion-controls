@@ -113,11 +113,11 @@
 		12206EC41804C33B00525EAC /* leapsynth */ = {
 			isa = PBXGroup;
 			children = (
+				12206ED31804C33B00525EAC /* MainMenu.xib */,
 				12206ED01804C33B00525EAC /* AppDelegate.h */,
 				12206ED11804C33B00525EAC /* AppDelegate.m */,
 				12206EED1804E72E00525EAC /* LeapSlider.h */,
 				12206EEE1804E72E00525EAC /* LeapSlider.m */,
-				12206ED31804C33B00525EAC /* MainMenu.xib */,
 				12206EF4180504A900525EAC /* CursorOverlay.h */,
 				12206EF5180504A900525EAC /* CursorOverlay.m */,
 				12206F0318050D4A00525EAC /* PointableCursor.h */,
